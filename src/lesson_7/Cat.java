@@ -12,12 +12,12 @@ public class Cat {
         this.appetite = appetite;
     }
 
-    public int getAppetite() {
-        return appetite;
+    public String getName() {
+        return name;
     }
 
-    public boolean isSatiety() {
-        return satiety;
+    public int getAppetite() {
+        return appetite;
     }
 
     public void setSatiety(boolean satiety) {
