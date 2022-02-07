@@ -22,9 +22,9 @@ public class Main {
 
         while (true) {
 
-            if (plate.getFood() - cats[countCats].getAppetite() >= 0) {
+            if (cats[countCats].eat(plate.getFood()) >= 0) {
 
-                plate.setFood(plate.getFood() - cats[countCats].getAppetite());
+                plate.setFood(cats[countCats].eat(plate.getFood()));
                 cats[countCats].setSatiety(true);
                 System.out.println("\n" + cats[countCats].getName() + " поел");
                 countCats++;
