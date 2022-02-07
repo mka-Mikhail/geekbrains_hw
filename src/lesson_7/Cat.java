@@ -12,6 +12,10 @@ public class Cat {
         this.appetite = appetite;
     }
 
+    public int eat(int food) {
+        return food - getAppetite();
+    }
+
     public String getName() {
         return name;
     }
